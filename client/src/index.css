@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.food-card {
+  border-radius: 10px;
+  margin: 2rem;
+  width: 40rem;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.food-card > img {
+  border-radius: 10px 0 0 10px;
+  min-width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.food-card-text {
+  margin-left: 20px;
+}
+
+.header {
+  display: flex;
+  /* margin: 1rem 2rem; */
+  padding: 1.1rem 2rem;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  background-color: #fcd396;
+}
+
+.header > img {
+  width: 6rem;
+  object-fit: cover;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.header-ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  position: relative;
+  margin-right: auto;
+}
+.link-class {
+  text-decoration: none;
+  color: red;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+
+}
+.link-header {
+  display: flex;
+  margin-top: 10px;
+}
+.link-header > a {
+  margin-right: 15px;
+}
+.login {
+  margin-left: 65vw;
+}
+.header-ul > li {
+  list-style: none;
+}
+
+.margin-space {
+  padding-top: 6rem;
+}
+
+.food-cards {
+  display: grid;
+  /* grid-template-rows: 30rem ;  */
+  /* grid-template-columns: 1fr 2fr; */
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(650px, 1fr));
+}
+
+.food-menu-title {
+  font-family: "Lobster", cursive;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .food-card {
+    width: 15rem;
+    flex-direction: column;
+    margin: 20px;
+  }
+  .food-card > img {
+    object-fit: cover;
+    min-width: 15rem;
+    height: 15rem;
+    border-radius: 10px 10px 0 0;
+  }
+  .food-cards {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+}
+
+.carousel {
+  padding-top: 94px;
+}
